@@ -1,16 +1,38 @@
-# React + Vite
+# Canadian Provincial Minimum Wage Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive bilingual dashboard for exploring and comparing provincial minimum wages in Canada from 2016 to 2026.
 
-Currently, two official plugins are available:
+This project was created for **SEG 3125 – Analysis and Design of User Interfaces**. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Goal
 
-## React Compiler
+The dashboard helps users:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- compare minimum wages across Canadian provinces;
+- examine changes over time;
+- compare wage values and percentage growth since 2016;
+- explore the data in English or French.
 
-## Expanding the ESLint configuration
+## Dashboard Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- A line chart showing minimum wage history from 2016 to 2026
+- A bar chart comparing provinces for a selected year
+- Filters for province, year, and measure
+- KPI cards showing the selected average, highest value, and range
+- Interactive tooltips, sorting, highlighting, and reset controls
+- English and French interface options
+- Keyboard support and responsive design
+
+## Data Source
+
+The data comes from the Government of Canada’s official historical minimum wage records:
+
+- [Historical minimum wage rates – English](https://minwage-salairemin.service.canada.ca/en/since1965.html)
+- [Taux historiques du salaire minimum – Français](https://minwage-salairemin.service.canada.ca/fr/since1965.html)
+- [Open Government dataset](https://open.canada.ca/data/en/dataset/390ee890-59bb-4f34-a37c-9732781ef8a0)
+
+To support consistent yearly comparisons, the dashboard uses the wage rate that was in effect on **January 1 of each year**. It focuses on the ten Canadian provinces to keep the comparison clear and readable.
+
+## Technologies Used
+
+React, JavaScript, CSS, SVG, CSV, and Vite.
