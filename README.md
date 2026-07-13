@@ -4,6 +4,8 @@ An interactive bilingual dashboard for exploring and comparing provincial minimu
 
 This project was created for **SEG 3125 – Analysis and Design of User Interfaces**. 
 
+The dashboard is deployed here: https://canadian-minimum-wage-dashboard.netlify.app/ 
+
 ## Project Goal
 
 The dashboard helps users:
